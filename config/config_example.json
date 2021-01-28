@@ -1,0 +1,8 @@
+{
+    "api_key": "PUT HERE YOU API KEY",
+    "user_id": 1,
+    "projects": {
+        "YOUR_CHANNEL": 1
+    },
+    "kanban_url": "https://YOUR_DOMAIN/jsonrpc.php"
+}
