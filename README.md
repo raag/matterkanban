@@ -15,7 +15,7 @@ Copy the file `config/config.example.json` to `config/config.json` and edit:
 
 1. Clone this project.
 2. Execute `yarn install`
-3. Execute `yarn buil`
+3. Execute `yarn build`
 4. Execute `yarn start`
 
 
