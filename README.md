@@ -7,7 +7,7 @@ Copy the file `config/config.example.json` to `config/config.json` and edit:
 
 - **api_key:** The API KEY from your kanboard setting->Integration page.
 - **kanban_url:** The API ENDPOINT from your kanboard setting->Integration page.
-- **user_id:** The id of the user who will owne the new tasks.
+- **user_id:** The id of the user who will create the new tasks.
 - **projects:** The relation of channels and projects with the form `channel_name:project_id`, for example: `my_channel:1`
 
 
