@@ -7,7 +7,7 @@ const createTask = async (request: NextApiRequest, response: NextApiResponse) =>
    const projectId = config.projects[channel_name as keyof Object]
 
    if (!projectId) {
-      response.statusCode = 403
+      response.statusCode = 200
       response.end('This channel is not linked to any project')
       return
    }
@@ -39,7 +39,7 @@ const createTask = async (request: NextApiRequest, response: NextApiResponse) =>
    const rawResult = await fetch(config.kanban_url, requestConfiguration)
 
    if (rawResult.status === 401) {
-      response.statusCode = 401
+      response.statusCode = 200
       response.end('Invalid API KEY')
       return
    }
