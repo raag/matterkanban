@@ -8,7 +8,7 @@ const createTask = async (request: NextApiRequest, response: NextApiResponse) =>
 
    if (!projectId) {
       response.statusCode = 200
-      response.end('This channel is not linked to any project')
+      response.end('ERROR: This channel is not linked to any project!!!')
       return
    }
 
@@ -40,7 +40,7 @@ const createTask = async (request: NextApiRequest, response: NextApiResponse) =>
 
    if (rawResult.status === 401) {
       response.statusCode = 200
-      response.end('Invalid API KEY')
+      response.end('ERROR: Invalid API KEY!!!')
       return
    }
 
